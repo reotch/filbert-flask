@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}Filbert Cohen-Sandrok Home{% endblock %}
+
+{% block body %}
+<h1>Alfa Bravo Charlie</h1>
+    {% for name in names %}
+        <p>{{ name.title() }}</p>
+    {% endfor %}
+{% endblock %}
